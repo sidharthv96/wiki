@@ -11,7 +11,8 @@ sed 1d
 # Helm2 delete all deployments
 helm2 list | sed 1d | cut -f 1 | xargs | xargs helm2 delete --purge
 
-
+# Diff between two folders
+diff -rub ~ ./dotfiles
 ```
 
 ## Git
