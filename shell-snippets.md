@@ -1,5 +1,7 @@
 # Shell Snippets
 
+## Shell
+
 ```bash
 # Cut output text
 cut -f 1
@@ -13,6 +15,9 @@ helm2 list | sed 1d | cut -f 1 | xargs | xargs helm2 delete --purge
 
 # Diff between two folders
 diff -rub ~ ./dotfiles
+
+# Keep doing something
+while true; do; k get deployments >> d.log; sleep 5 ; done
 ```
 
 ## Git
@@ -25,7 +30,7 @@ git --no-pager diff
 git diff --name-only master #With Master
 git diff --name-only HEAD~1 #Last commit
 git diff --name-only HEAD~5 HEAD~10 #Last 5-10 commits
-
-# 
 ```
+
+
 
