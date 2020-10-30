@@ -4,8 +4,12 @@
 
 ```bash
 # Cut output text
-cut -f 1
-cut -d' ' -f 1
+cut -f 1 #First Column, tab delimiter
+cut -d' ' -f 1  # Space delimiter
+cut -f 5- # Columns after 5
+cut -f -4,7- # Columns before 4 and after 7
+cut -f 1,4,5 # Columns 1,4,5
+
 
 # Remove First line
 sed 1d
