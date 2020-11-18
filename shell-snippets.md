@@ -36,5 +36,11 @@ git diff --name-only HEAD~1 #Last commit
 git diff --name-only HEAD~5 HEAD~10 #Last 5-10 commits
 ```
 
+## Docker
 
+```bash
+#Override entrypoint
+docker run -it --entrypoint /bin/bash [docker_image]
+
+```
 
