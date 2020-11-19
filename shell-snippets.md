@@ -10,7 +10,6 @@ cut -f 5- # Columns after 5
 cut -f -4,7- # Columns before 4 and after 7
 cut -f 1,4,5 # Columns 1,4,5
 
-
 # Remove First line
 sed 1d
 
@@ -22,6 +21,12 @@ diff -rub ~ ./dotfiles
 
 # Keep doing something
 while true; do; k get deployments >> d.log; sleep 5 ; done
+
+#jq
+echo t.json | jq -r ".key" # -r prints without quotes
+
+#base64 der to pem
+curl -s https://webhookspo.pr.rightnow.com/AgentWeb/api/elementManager/authentication/publicCert | jq ".content" -r | base64 --decode | openssl x509 -inform der -pubkey -noout
 ```
 
 ## Git
