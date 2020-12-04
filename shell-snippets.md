@@ -41,6 +41,11 @@ git --no-pager diff
 git diff --name-only master #With Master
 git diff --name-only HEAD~1 #Last commit
 git diff --name-only HEAD~5 HEAD~10 #Last 5-10 commits
+
+# Upstream
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+git fetch upstream
+git merge upstream/master
 ```
 
 ## Docker
