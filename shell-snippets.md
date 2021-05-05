@@ -12,6 +12,9 @@ cut -f 1,4,5 # Columns 1,4,5
 
 # Remove First line
 sed 1d
+# Remove Last line
+sed -i '$ d' foo.txt
+#Replace text
 sed -i 's/old-text/new-text/g' input.txt
 
 # Helm2 delete all deployments
